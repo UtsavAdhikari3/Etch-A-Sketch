@@ -1,4 +1,21 @@
+const mainBody = document.querySelector("body")
+const buttonDiv = document.createElement("div");
+buttonDiv.classList.add("buttonDiv")
+mainBody.appendChild(buttonDiv);
+
+const myButton = document.createElement("button");
+myButton.classList.add("myButton")
+myButton.textContent = "Click me to create your own grid";
+buttonDiv.appendChild(myButton);
 const container = document.getElementById("container");
+
+const mainDiv = document.createElement("div");
+mainDiv.classList.add("mainDiv")
+mainBody.appendChild(mainDiv)
+
+const myDiv = document.createElement("div");
+myDiv.classList.add("container")
+mainDiv.appendChild(myDiv)
 
 const modernColors = [
     "#FF6F61", // Coral
@@ -35,8 +52,8 @@ function makeDiv(rows, cols) {
             cell.style.backgroundColor = `${modernColors[randomNumber]}`; // Change background color on hover
         });
 
-        container.appendChild(cell); // Append the cell to the container
+        myDiv.appendChild(cell); // Append the cell to the container
     }
 }
 
-makeDiv(16, 16); // Creates a 16x16 grid of cells
+makeDiv(12, 12); // Creates a 16x16 grid of cells
