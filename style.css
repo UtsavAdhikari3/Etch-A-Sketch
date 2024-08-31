@@ -1,0 +1,15 @@
+
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: space-evenly; 
+}
+
+.cells {
+    border: 1px solid black;
+    width: 90px;
+    height: 90px;
+    flex: 0 0 auto; /* Prevents the cells from growing */
+}
