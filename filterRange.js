@@ -1,5 +1,5 @@
 function filterRange(arr, a, b){
-    filteredArray = arr.filter(element => element >= a && element <=b)
+    let filteredArray = arr.filter(element => element >= a && element <=b)
     return filteredArray;
 }
 
