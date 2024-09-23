@@ -12,7 +12,58 @@
         <p>Required fields are followed by
         <strong><span aria-label="required">*</span></strong>
         </p>
-        <section></section>
+        <section>
+          <fieldset>
+            <h2>Contact Information</h2>
+            <fieldset>
+              <legend>Title</legend>
+              <ul>
+                <li>
+                  <label for="title-1">
+                    <input type="radio" id="title-1" value="A" name="title">
+                    Ace
+                  </label>
+                </li>
+                <li>
+                  <label for="title-2"></label>
+                    <input type="radio" id="title-2" value="Q" name="title">
+                    Queen
+                  </label>
+                </li>
+                <li>
+                  <label for="title-2"></label>
+                    <input type="radio" id="title-3" value="K" name="title">
+                    King
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <p>
+              <label for="name">
+                <span>Name: </span>
+                <strong aria-label="required"><span>*</span></strong>
+              </label>
+              <input type="text" name="username" id="name" required>
+            </p>
+            <p>
+              <label for="email">
+                <span>Email: </span>
+                <strong aria-label="required"><span>*</span></strong>
+              </label>
+              <input type="email" name="user-email" id="email" required>
+            </p>
+            <p>
+              <label for="password">
+                <span>Password</span>
+                <strong aria-label="required"><span>*</span></strong>
+              </label>
+              <input type="password" name="user-password" id="password" required>
+            </p>
+            <section>
+              <button type="submit">Validate Payment</button>
+            </section>
+          </fieldset>
+        </section>
     </form>
   </body>
 </html>
