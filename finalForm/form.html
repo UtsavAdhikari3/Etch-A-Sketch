@@ -10,9 +10,23 @@
       <h1>Speaker Submission</h1>
       <p><em>Want to speak at our fake conference? Fill out
         this form.</em></p>
+        <form action="" method="get" class="speaker-form">
+            <div class="form-row">
+                <label for="full-name">Name</label>
+                <input type="text" name="full-name" id="full-name">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" placeholder="joe@mail.com">
+            </div>
+            <fieldset class="legacy-form-row">
+                <legend>Type of Talk</legend>
+                <input type="radio" name="talk-type" id="talk-type-1" value="main-stage">
+                <label for="talk-type-1">Main Stage</label>
+                <input type="radio" name="talk-type" id="talk-type-2" value="workshop" checked>
+                <label for="talk-type-2">Workshop</label>
+            </fieldset>
+        </form>
     </header>
-    <form action="" method="get" class="speaker-form">
-        
-    </form>
   </body>
 </html>
